@@ -17,35 +17,6 @@
     />
     <meta content="https://deeeep.glitch.me" property="og:url" />
     <meta property="og:site_name" content="It*s ⫷Ꮆяᗩиᕲ💠ᑭî⫸" />
-    <style>
-      .menu {
-        display: inline-block;
-      }
-      .menu-content {
-        display: none;
-        position: absolute;
-        top: 80px;
-        right: 0;
-        width: 120px;
-        overflow: auto;
-        box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
-        color: #fff; !important
-        background-color: #000; !important
-      }
-      .menu:hover .menu-content {
-        display: block;
-      }
-      .menu-content p {
-        display: block;
-        opacity: 1;
-        padding: 5px;
-        text-decoration: none;
-      }
-      .menu-content p:hover {
-        color: #FFFFFF; !important
-        background-color: #00A4BD; !important
-      }
-    </style>
   </head>
   <body
     style="
@@ -54,8 +25,8 @@
     "
   >
     <iframe
-      src="https://thepiguy3141.github.io/DeeeepioGravity/doctorpus/index.html"
-      id="main"
+      src="https://thepiguy3141.github.io/DeeeepioGravity/original/index.html"
+      id="iframe"
       style="
         height: 90vh;
         width: 100vw;
@@ -69,5 +40,18 @@
       mozallowfullscreen="true"
     >
     </iframe>
+    <input type="checkbox" id="checkbox" onclick="changeassets()" style="position: absolute; bottom: 0; left: 0; margin: 5vh;">
+    <label for="checkbox" style="color: white; font-family: Verdana; position: absolute; bottom: 0; left: 0; margin: 5vh 8vh;">Enable docassets</label>
+    <script>
+      function changeassets() {
+        var checkBox = document.getElementById("checkbox");
+        var iframe = document.getElementById("iframe").src;
+        if (checkBox.checked == true){
+            document.getElementById("iframe").src = "https://thepiguy3141.github.io/DeeeepioGravity/doctorpus/index.html";
+        } else {
+            document.getElementById("iframe").src = "https://thepiguy3141.github.io/DeeeepioGravity/original/index.html";
+        }
+      }
+</script>
   </body>
 </html>
